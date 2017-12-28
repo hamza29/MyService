@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hamza.s4smartphones.myservice.MainActivity">
+
+
+    <Button
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:text="START SERVICE"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/prcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/percent"
+        android:layout_alignBottom="@+id/percent"
+        android:layout_toLeftOf="@+id/percent"
+        android:layout_toStartOf="@+id/percent"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:text="%" />
+
+    <EditText
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:hint="ADD LIMIT"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/service"
+        android:layout_alignRight="@+id/service"
+        android:layout_below="@+id/prcnt"
+        android:layout_marginTop="56dp"
+        android:text="Stop Service" />
+
+</RelativeLayout>
